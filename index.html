@@ -2,13 +2,91 @@
 <html>
 
 <head>
-    <title>Rock Paper Scissors</title>
+    <title>
+        Rock Paper Scissors
+    </title>
     <meta charset="UTF-8">
+    <script src="scripts/RockPaperScissors.js" defer>
+    </script>
 </head>
 
+<header>
+    <h1 class="title-header">
+        Rock Paper Scissors
+    </h1>
+</header>
+
 <body>
-    <script src="scripts/RockPaperScissors.js">
-    </script>
+    <div class="settings">
+        <label class="settings__best-of-input-label"
+            for="settings__best-of-input">
+            Best of:
+        </label>
+        <input class="settings__best-of-input" type="number" min="1"
+            name="settings__best-of-input">
+        <button class="settings__restart-btn">
+            New Game
+        </button>
+    </div>
+
+    <div class="scoreboard">
+        <h2 class="scoreboard__header">
+            Score
+        </h2>
+        <div class="scoreboard__you">
+            You
+        </div>
+        <div class="scoreboard__your-score">
+        </div>
+        <div class="scoreboard__separator">
+            -
+        </div>
+        <div class="scoreboard__computer-score">
+        </div>
+        <div class="scoreboard__computer">
+            Computer
+        </div>
+    </div>
+
+    <div class="choice-menu">
+        <h2 class="choice-menu-header">
+            Choose one:
+        </h2>
+        <button class="choice-menu__rock">
+            Rock
+        </button>
+        <button class="choice-menu__paper">
+            Paper
+        </button>
+        <button class="choice-menu__scissors">
+            Scissors
+        </button>
+    </div>
+
+    <div class="results">
+        <div class="results__you">
+            <div class="results__you-played-msg">
+                You played:
+            </div>
+            <div class="results__your-play">
+            </div>
+        </div>
+        <div class="results__computer">
+            <div class="results__computer-played-msg">
+                Computer played:
+            </div>
+            <div class="results__computer-play">
+            </div>
+        </div>
+        <div class="results__round-result-msg">
+        </div>
+        <div class="results__game-status-text">
+            Game status:
+        </div>
+        <div class="results__game-result">
+            A new game has started.
+        </div>
+    </div>
 </body>
 
 </html>
